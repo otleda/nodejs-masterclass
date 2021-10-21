@@ -14,4 +14,5 @@ Pequeno estudo com o NodeJS
 Pequeno conceito de uma aplicacao, que fica monitorando o uso e o desempenho da memoria de seu pc.
 
 ## Logger.js
-Pequeno conceito de logger, para estar armazeando em informaçoes em um arquivo. 
+Pequeno conceito de logger, para estar armazeando em informaçoes em um arquivo, usamos __path__ para localizar o caminho e __fs__ para pegar o arquivo. 
+
