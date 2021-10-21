@@ -7,9 +7,11 @@ Pequeno estudo com o NodeJS
 - 4 Funcao global -> setInterval()
 - 5 Conceitos do Common JS (require/exports) 
 - 6 Events
+- 7 Modules/exports
+- 8 Usando FileSistem
 
 ## stats.js
 Pequeno conceito de uma aplicacao, que fica monitorando o uso e o desempenho da memoria de seu pc.
 
 ## Logger.js
-Pequeno conceito de logger, para estar armazeando em memoria informaçoes em um arquivo. 
+Pequeno conceito de logger, para estar armazeando em informaçoes em um arquivo. 

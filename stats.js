@@ -18,5 +18,6 @@ setInterval(()=>{
     console.clear()
     console.table(stats)
 
-}, 1000);
+    log(`${JSON.stringify(stats)}\n`);
 
+}, 1000);
