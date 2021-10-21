@@ -1,4 +1,5 @@
 const OS = require('os');
+const log = require('./logger');
 
 setInterval(()=>{
     const { freemem, totalmem } = OS; //Desestruturacao 
