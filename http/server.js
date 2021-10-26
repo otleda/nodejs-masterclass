@@ -1,12 +1,36 @@
 const http = require('http');
+const fs = require('fs');
+const path = require('path');
 
 http.createServer((req, res)=>{
-    if(req.url === '/')
-        return res.end('Home Page')
-    
-    if (req.url=== '/contato') {
-        return res.end('Contato')
+
+    if(req.url === '/') {
+        
+        fs.readFile( path.join(__dirname, '../public','index.html'), 
+        
+            (err, content)=>{
+                
+                if(err) throw err
+
+                res.end(content)
+            }
+        );
     }
-}).listen(3000, ()=>{
-        console.log('Server is Running ...')
-})
+
+    if(req.url === '/contact') {
+
+        fs.readFile(path.join(__dirname, '../public', 'contact.html'),
+
+            (err, content)=> {
+
+                if(err) throw err
+
+                res.end(content)
+
+            }
+        
+        );
+
+    }
+
+}).listen(5000, ()=> console.log('Running to Server ... ok'));
