@@ -1,5 +1,5 @@
-const OS = require('os');
-const log = require('./logger');
+const OS = require('os')
+const log = require('./Logger/logger')
 
 setInterval(()=>{
     const { freemem, totalmem } = OS; //Desestruturacao 
@@ -18,6 +18,7 @@ setInterval(()=>{
     console.clear()
     console.table(stats)
 
-    log(`${JSON.stringify(stats)}\n`);
+    console.log('Running logger')
+    log(`${JSON.stringify(stats)}\n`)
 
 }, 1000);
